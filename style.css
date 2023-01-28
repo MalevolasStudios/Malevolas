@@ -1,0 +1,566 @@
+/*Pag*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    color: #daa520;
+}
+.pag {
+    background: url(https://super.abril.com.br/wp-content/uploads/2018/03/tatuagens-passam-o-dia-sendo-comidas-por-macrc3b3fagos.png?w=1024);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.body {
+    background: linear-gradient(45deg, black, transparent);
+}
+a {
+    cursor: pointer;
+    transition: all 0.8s;
+}
+a:hover {
+    color: rgb(129, 29, 29);
+}
+.container02 {
+    position: fixed;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sessao02 {
+    width: 45px;
+    background: #000;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+.redes_malevolas{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.bx {
+    cursor: pointer;
+    transition: all 0.8s;
+    font-size: 1.5rem;
+}
+.scrolltop {
+    outline: none;
+    border: 0;
+    background: linear-gradient(41deg, #b2621f, #af2929a6);
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 10px;
+    z-index: 999;
+    cursor: pointer;
+    transition: all 2s ease;
+    right: 16px;
+    opacity: 0;
+    visibility: hidden;
+}
+.scrolltop.active {
+    opacity: 1;
+    visibility: visible;
+}
+ .scrolltop .seta {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    rotate: 0deg;
+}
+p {
+    font-size: 1rem;
+}
+.load{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+.loandig {
+    display: none;
+}
+
+/*Efeito*/
+.bx:hover {
+    color: rgb(129, 29, 29);
+}
+
+/*Mobile*/
+@media (max-width: 900px){
+    a {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+    .marca {
+        width: 330px;
+    }
+}
+
+/*Header*/
+.menu_principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    height: 195px;
+    gap: 2rem;
+}
+.links, .links_secundario {
+    display: flex;
+    gap: 1.5rem;
+    position: relative;
+}
+.nav_drop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mobile {
+    display: none;
+}
+
+/*Drop*/
+.links01 {
+    display: none;
+    position: absolute;
+    top: 25px;
+}
+.nav01 {
+    padding-bottom: 0.5rem;
+}
+/**/
+
+.logo {
+    width: 300px;
+    cursor: pointer;
+    transition: all 2s;
+}
+#btnmenu {
+    font-size: 1.8rem;
+    color: #b8860b;
+    float: right;
+    display: none;
+}
+#check {
+    display: none;
+}
+/*Efeitos*/
+.links:hover .links01 {
+    display: block;
+}
+.logo:hover {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+/*Mobile*/
+
+@media (max-width: 900px) {
+    .menu_principal {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        gap: 0;
+        border-bottom: 1px solid;
+        height: 130px;
+    }
+    .links {
+        position: fixed;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(220deg, black, #000);
+        top: 0px;
+        left: -1000px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.8s;
+        gap: 0.8rem;
+        }
+    #check:checked ~ .links {
+        left: 0;
+     }
+    #btnmenu{
+        display: block;
+    }
+    .links_secundario {
+        display: none;
+    }
+    .links01 {
+        top: 500px;
+    }
+    .logo {
+        width: 150px;
+    }
+    .nav_drop {
+        display: none;
+    }
+    #mobile {
+        display: block;
+    }
+} 
+
+/*Container01*/
+
+.container01 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+}
+.Apresentação {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sessao {
+    cursor: pointer;
+    transition: all 0.8s;
+    font-size: 2.2rem;
+}
+/*Efeito*/
+.sessao:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(96, 18, 18));
+    filter: drop-shadow(15px 10px 5px rgba(96, 18, 18));
+}
+
+/*Mobile*/
+@media (max-width: 900px) {
+    .Apresentação {
+        height: 125px;
+    }
+    .sessao {
+        font-size: 0.8rem;
+        width: 370px;
+        padding: 0px 1rem;
+    }
+    .tattoo {
+        font-size: 1rem;
+    }
+}
+
+/*Container03*/
+.container03 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    height: 550px;
+}
+.sessao03 {
+    height: 500px;
+    width: auto;
+    display: flex;
+}
+.direita {
+    background-image: url(./Direita.png);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+}
+.Esquerda {
+    background-image: url(./Esquerda.png);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+}
+.cor {
+    background: linear-gradient(45deg, black, transparent);
+}
+.titulo  {
+    width: 550px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 9rem;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+/*Efeitos*/
+.titulo:hover {
+    color: rgb(129, 29, 29);
+}
+/*Mobile*/
+
+@media (max-width: 900px) {
+    .sessao03 {
+        flex-direction: column;
+        height: auto;
+    }
+    .titulo {
+        width: 350px;
+        height: 350px;
+        font-size: 5rem;
+    }
+    .container03 {
+        height: auto;
+        padding: 1rem 0px;
+    }
+}
+
+/*container05*/
+.titulo01 {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+.tattoo {
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.cards {
+    width: 300px;
+    height: 335px;
+}
+.sessao06 {
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.redes_ {
+    display: flex;
+    justify-content: center;
+}
+.sessao07 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*Efeitos*/
+.tattoo:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    margin-bottom: 1rem;
+}
+
+/*Mobile*/
+@media (max-width: 900px) {
+    .titulo01 {
+        height: 30px;
+        font-size: 1.4rem;
+    }
+    .sessao06 {
+        height: 235px;
+    }
+    .cards {
+        height: auto;
+    }
+}
+
+/*Container06*/
+.tattoos {
+    height: 153px;
+    width: 153px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #000;
+}
+
+/*Efeitos*/
+.tattoos:hover {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    border-radius: 10px;
+}
+
+/*Mobile*/
+@media (max-width: 900px) {
+    #fotos {
+        display: none;
+    }
+    .tattoos {
+        height: 120px;
+        width: 120px;
+    }
+}
+
+/*Container07*/
+.container07 {
+    display: flex;
+    justify-content: space-evenly;
+    background: #000;
+    height: 500px;
+    align-items: center;
+}
+.mapps {
+    border: 2px solid;
+    border-radius: 15px;
+    width: 600px; 
+    height: 450px;
+}
+.logo01 {
+    width: 180px;
+}
+.texto {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+@media (max-width: 900px) {
+    .mapps {
+        width: 200px;
+        height: 150px;
+    }
+    .container07 {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 330px;
+    }
+    .logo01 {
+        width: 120px;
+    }
+    .texto {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 0.9rem;
+    }
+    .titulo02 {
+        font-size: 1.1rem;
+    }
+}
+
+/*Container08*/
+.container08 {
+    background: #000;
+}
+.regras {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.titulo03 {
+    font-size: 3rem;
+}
+.texto04 {
+    font-size: 1.5rem;
+}
+.ordem01 {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    height: 200px;
+    align-items: center;
+}
+.ordem02 {
+    width: 246px;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+.numero {
+    font-size: 1.8rem;
+}
+.titulo04 {
+    font-size: 1.4rem;
+}
+@media (max-width: 900px) {
+    .regras {
+        height: auto;
+        text-align: center;
+    }
+    .pag {
+        background-position: top;
+    }
+    .titulo03 {
+        font-size: 1.3rem;
+    }
+    .texto04 {
+        font-size: 0.9rem;
+    }
+    .texto05 {
+        font-size: 1rem;
+    }
+    .ordem01 {
+        height: 600px;
+        gap: 0;
+    }
+    .ordem02 {
+        width: 335px;
+    }
+    .numero {
+        font-size: 1.3rem;
+    }
+    .titulo04 {
+        font-size: 1.1rem;
+    }
+}
+.img_mobile {
+    display: none;
+}
+.mobile {
+    display: none;
+}
+#rede_apre {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .container02 {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    } 
+    .redes_malevolas_mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .rede_texto {
+        text-align: center;
+    }
+    .container_redes_mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+    .img_mobile {
+        display: block;
+    }
+    .img_mobile_redes {
+        width: 150px;
+    }
+    #rede_apre {
+        display: block;
+    }
+}
