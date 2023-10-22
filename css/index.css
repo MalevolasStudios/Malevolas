@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+/*Container Primario*/    
+    .container-principal {
+        background: url(https://super.abril.com.br/wp-content/uploads/2018/03/tatuagens-passam-o-dia-sendo-comidas-por-macrc3b3fagos.png?w=1024);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .container-principal div {
+        width: 100%;
+        height: 100vh;
+        background: #000000cf;
+    }
+    .container-principal span {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: .2rem;
+        color: #ba7f10;
+        font-weight: 700;
+       /* -webkit-filter: drop-shadow(15px 10px 5px rgba(96, 18, 18));
+        filter: drop-shadow(15px 10px 5px rgba(96, 18, 18));*/
+        font-weight: 100;
+        letter-spacing: 2px;
+    }
+    span h2 {
+        font-size: 2.5rem;
+    }
+    span p {
+        font-size: 1.5rem;
+    }
+/*Container Primario*/  
+/*Container Projetos*/
+.container-fotos {
+    z-index: -20;
+}
+    .sessaoFotos {
+        display: flex;
+        flex-wrap: wrap;
+        background: #000000;
+        justify-content: center;
+    }  
+    .GaleriaFotos {
+        width: 162px;
+        height: 162px;
+        cursor: pointer;
+        transition: all 1s;
+    }
+
+    .container-projetos {
+        width: 100%;
+        height: 60vh;
+        background: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        color: #7a5208;
+        gap: 3rem;
+    }
+    .sessaoProjetos {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .titulo h1 {
+        /*webkit-filter: drop-shadow(15px 10px 5px rgba(96, 18, 18));
+        filter: drop-shadow(15px 10px 5px rgba(96, 18, 18));*/
+    }
+    .textoProjetos {
+        width: 22%;
+    }
+    .textoProjetos h2 {
+        -webkit-filter: drop-shadow(15px 10px 5px rgb(255, 255, 255));
+        filter: drop-shadow(15px 10px 5px rgba(255, 255, 255, 0.109));
+    }
+/*Container Projetos*/    
+/*Container Artistas*/
+    .containerArtistas {
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .Fotos-artistas {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    .slider {
+        width: 100%;
+        height: 90vh;
+        position: relative;
+        display: flex;
+        transition: all 0.5s;
+        overflow: hidden;
+    }
+    .slider .slide {
+        width: 50%;
+        height: 100vh;
+        position: relative;
+        text-align: center;
+        transition: 0.5s;
+    }
+    .slider .slide:hover {
+        width: 100%;
+        cursor: pointer;
+    }
+    .SessaoArtitasTexto {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #7a5208;
+        text-align: center;
+        flex-direction: column;
+    } 
+    .SessaoArtitasTexto h1 {
+        letter-spacing: 2px;
+        font-size: 2rem;
+        font-family: 'Playfair Display', serif;
+        text-transform: uppercase;
+        /*-webkit-filter: drop-shadow(15px 10px 5px rgba(96, 18, 18));
+        filter: drop-shadow(15px 10px 5px rgba(96, 18, 18));*/
+    } 
+    .SessaoArtitasTexto p {
+        width: 80%;
+        font-size: 1.3rem;
+    }
+    .textosFtosArtistas {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        justify-content: end;
+        background: #0000005f;
+        transition: all .5s;
+        color: #fff;
+        flex-direction: column;
+    }
+    .textosFtosArtistas:hover {
+        background: #00000000;
+    }
+    .Artistas {
+        width: 100%;
+        height: 100vh;
+        background: #000;
+        display: flex;
+    }
+    .slider #Funciarios:hover {
+        width: 200%;
+        cursor: pointer;
+    }
+    .slider #Funciarios {
+        width: 100%;
+        cursor: pointer;
+    }
+    #fotosTattoos {
+        width: 100%;
+    }
+    /*Container Artistas*/

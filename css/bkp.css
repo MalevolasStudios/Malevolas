@@ -1,0 +1,9 @@
+@media (max-width: 900px) {
+    main {
+        display: none;
+    }
+    .mobile {
+        display: block;
+        font-size: 5rem;
+    }
+}
